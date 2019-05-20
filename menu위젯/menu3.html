@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS를 이용한 메뉴 예제 - 3가지3</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+    .title { width: 1200px; line-height: 3; margin:0 auto; padding-top: 40px; }  
+    .absImg { position:relative; width: 1200px; height: 300px; 
+        margin:0 auto; }
+    .absImg img { position:absolute; top: 0; left: 0; }    
+    </style>
+    <style>
+    .hd { width: 1200px; height: 100px; position:relative; margin:0 auto;}   
+    .logo { position:absolute; width: 200px; height:40px; top:30px; left:0; 
+        z-index:99; } 
+    #gnb3 { position:absolute; width: 900px; height:40px; top:30px; right:50px; z-index:999; border:1px solid #333; }
+    #gnb3 li { float:left; width:25%; line-height:40px; background:#fff; }
+    #gnb3 li a { display:block; text-align:center; line-height:40px; 
+        background:#fff; color:#0a8ef3; border-right:1px solid #333; } 
+    #gnb3 li a.dep3 { font-weight:bold; border-bottom:1px solid #333; } 
+    #gnb3 li:last-child a.dep3 { border-right:0; }
+    #gnb3 li:hover a.dep3 { color:#fff; background:#0a8ef3; } 
+    #gnb3 li:first-child .sub3 a { border-left:1px solid #333; }    
+    #gnb3 .sub3 { display:none;  height: 160px; 
+        border-bottom:1px solid #333; }
+    #gnb3:hover .sub3 { display:block;  }   
+    #gnb3 .sub3 li { clear:both; width: 100%; } 
+    #gnb3 .sub3 li a { background:#fff; color:#333; }
+    #gnb3 .sub3 li a:hover { color:#fff; background:#333; } 
+    #gnb3 li:first-child .sub3:before { content:""; display:block; 
+        width: 250px; height:162px; position:absolute; background:#333; 
+        top: 40px; left: -250px; } 
+    #gnb3 li:last-child .sub3:before { content:""; display:block; width: 50px; height: 162px; background:#333; position:absolute; top: 40px; right: -50px; }    
+    </style>
+</head>
+<body>
+<h2 class="title">메뉴 전체가 펼져지면서 양쪽 메뉴가 없는 공간도 같이 열리게</h2>
+<header class="hd">
+    <a href="#" class="logo">
+        <img src="http://placehold.it/200x40/333" alt="로고">
+    </a>
+    <nav id="gnb3">
+        <ul>
+            <li>
+                <a href="#" class="dep3">메뉴1</a>
+                <ul class="sub3">
+                    <li><a href="#">메뉴11</a></li>
+                    <li><a href="#">메뉴12</a></li>
+                    <li><a href="#">메뉴13</a></li>
+                    <li><a href="#">메뉴14</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="dep3">메뉴2</a>
+                <ul class="sub3">
+                    <li><a href="#">메뉴21</a></li>
+                    <li><a href="#">메뉴22</a></li>
+                    <li><a href="#">메뉴23</a></li>
+                    <li><a href="#">메뉴24</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="dep3">메뉴3</a>
+                <ul class="sub3">
+                    <li><a href="#">메뉴31</a></li>
+                    <li><a href="#">메뉴32</a></li>
+                    <li><a href="#">메뉴33</a></li>
+                    <li><a href="#">메뉴34</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="dep3">메뉴4</a>
+                <ul class="sub3">
+                    <li><a href="#">메뉴41</a></li>
+                    <li><a href="#">메뉴42</a></li>
+                    <li><a href="#">메뉴43</a></li>
+                    <li><a href="#">메뉴44</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+<div class="absImg">
+    <img src="http://placehold.it/1200x300/f30a88" alt="비주얼배너">
+</div>    
+</body>
+</html>

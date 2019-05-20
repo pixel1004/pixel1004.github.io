@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS를 이용한 메뉴 예제 - 3가지1</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+    .title { width:1200px; line-height:2.4; color:#333; padding-top:20px; 
+        margin:0 auto; }    
+    </style>
+    <style>
+    .hd { width:1200px; height:100px; position:relative; margin:0 auto; }    
+    .logo { display:block; margin-top:30px; float:left; }    
+    #gnb1 { float:right; width:900px; height: 40px; margin-top: 30px; 
+        border:1px solid #333; } 
+    #gnb1 li { float:left; width:25%; line-height:40px;  position:relative; 
+        background:#fff; }  
+    #gnb1 li a { display:block; text-align:center; line-height: 40px; 
+        color:#f16c13; }
+    #gnb1 li a.mnuDep1 { border-right:1px solid #333; font-weight:600; }
+    #gnb1 li:hover a.mnuDep1 { background:#f16c13; color:#fff;  }        
+    #gnb1 li:last-child a.mnuDep1 { border-right:0px; }    
+    #gnb1 .sub1 { height:0;  width:100%; visibility: hidden; transition:0.4s; width:100%; opacity:0; position:absolute; z-index:999; }    
+    #gnb1 li:hover .sub1 { height:auto; visibility:visible; opacity:1; }   
+    #gnb1 .sub1 li { clear: both; width: 100%; }
+    #gnb1 .sub1 li a { text-align:center; border:1px solid #333; border-top:0px; }   
+    #gnb1 .sub1 li a:hover { background:#f16c13; color:#fff;  }   
+    .absImg { width:1200px; height:300px; position:relative; overflow:hidden; 
+        margin:0 auto; }    
+    .absImg img { position:absolute; top:0; left:0; }    
+    </style>
+</head>
+<body>
+<h2 class="title">해당 서브메뉴만 펼쳐지는 경우</h2>
+<header class="hd">
+    <a href="#" class="logo">
+        <img src="http://placehold.it/200x40" alt="로고">
+    </a>
+    <nav id="gnb1">
+        <ul>
+            <li><a href="#" class="mnuDep1">메뉴1</a>
+                <ul class="sub1">
+                    <li><a href="#">메뉴11</a></li>
+                    <li><a href="#">메뉴12</a></li>
+                    <li><a href="#">메뉴13</a></li>
+                    <li><a href="#">메뉴14</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="mnuDep1">메뉴2</a>
+                <ul class="sub1">
+                    <li><a href="#">메뉴21</a></li>
+                    <li><a href="#">메뉴22</a></li>
+                    <li><a href="#">메뉴23</a></li>
+                    <li><a href="#">메뉴24</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="mnuDep1">메뉴3</a>
+                <ul class="sub1">
+                    <li><a href="#">메뉴31</a></li>
+                    <li><a href="#">메뉴32</a></li>
+                    <li><a href="#">메뉴33</a></li>
+                    <li><a href="#">메뉴34</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="mnuDep1">메뉴4</a>
+                <ul class="sub1">
+                    <li><a href="#">메뉴41</a></li>
+                    <li><a href="#">메뉴42</a></li>
+                    <li><a href="#">메뉴43</a></li>
+                    <li><a href="#">메뉴44</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+<div class="absImg">
+    <img src="http://placehold.it/1600x300/7ba7dd" alt="">
+</div>
+
+</body>
+</html>
