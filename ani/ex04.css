@@ -1,0 +1,19 @@
+*{margin: 0;padding: 0;}
+body{font:14px "맑은 고딕","Mulgun Gothic",arial, sans-serif;padding: 50px;}
+img{border:0}
+ul,li{list-style: none;}
+a{color:#777; text-decoration: none;}
+
+#over{width: 800px;height: 800px;border:1px solid #aaa;margin: 0 auto;position: relative;}
+#ball{width: 100px;height: 100px;background:#f00;border-radius:50%;position: absolute;top:50%;left:50%;margin-left:-50px;margin-top:-50px; transition-duration:2s;}
+.blue{width: 50px;height: 50px;background:#00f;border-radius:50%;color:#fff;text-align: center;line-height: 50px;font-size: 2em;position: absolute;top:50%;left:50%;margin-left:-25px;margin-top:-25px;transition-duration:2s;}
+/* +-375,0 */
+#over:hover #ball{opacity:0;}
+#over:hover #clicle1{transform:translate(-375px, -375px);background:#ff0066;transition-delay:0.1s;}
+#over:hover #clicle2{transform:translate(0px, -375px);background:#cc0000;transition-delay:0.2s;}
+#over:hover #clicle3{transform:translate(375px, -375px);background:#ff0000;transition-delay:0.3s;}
+#over:hover #clicle4{transform:translate(-375px, 0px);background:#669900;transition-delay:0.4s;}
+#over:hover #clicle5{transform:translate(375px, 0px);background:#009966;transition-delay:0.5s;}
+#over:hover #clicle6{transform:translate(-375px, 375px);background:#0033ff;transition-delay:0.6s;}
+#over:hover #clicle7{transform:translate(0px, 375px);background:#3366cc;transition-delay:0.7s;}
+#over:hover #clicle8{transform:translate(375px, 375px);background:#6600ff;transition-delay:0.8s;}

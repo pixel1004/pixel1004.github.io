@@ -1,0 +1,49 @@
+*{margin: 0;padding: 0;}
+body{font:14px "맑은 고딕","Mulgun Gothic",arial, sans-serif;padding: 50px;}
+img{border:0}
+ul,li{list-style: none;}
+a{color:#777; text-decoration: none;}
+
+
+section{margin: 50px;width: 100px;height: 100px;border:5px solid #f00;}
+section div{width: 100px;height: 100px;background:#ccc;text-align: center; line-height: 100px;font-size: 2em;transition-duration:2s;}
+#box1:hover div{transform:translateX(200px) scale(2) }
+#box2:hover div{transform:rotate3d(2.5,1.2,-1.5,45deg);
+-webkit-transform:rotate3d(2.5,1.2,-1.5,45deg);}
+#box3:hover div{transform:skew(-30deg, -30deg)}
+#box4:hover div{transform:rotate(360deg);transform-origin:100% 100%}
+
+/* 
+transform:웹요소 변형하기
+transform:translate(위치) rotate(회전) skew(왜곡)scale(크기)
+위치의 이동
+transform:translate(x,y)
+transform:translateX(값)
+transform:translateY(값)
+transform:translate3D(x,y,z)
+transform:translateZ(z)
+
+크기의 변화
+transform:scale(x,y)
+transform:scaleX(x)
+transform:scaleY(y)
+transform:scale3D(x,y,z)
+transform:scaleZ(z)
+
+
+각도의 변화(degree)--360deg,720deg(두바퀴)
+transform:rotate(x,y)
+transform:rotateX(x)
+transform:rotateY(y)
+transform:rotate3D(x,y,z각도)-벡터방향
+transform:rotateZ(z)
+
+요소를 비틀어 왜곡 deg
+transform:skew(x,y)
+transform:skewX(x)
+transform:skewY(y)
+
+transform-origin:변형의 원점으 설정
+transform-origin:x축,y축, z축
+transform-origin:right,bottom,left,top==0~100% 0~100%
+*/

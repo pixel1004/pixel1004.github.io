@@ -1,0 +1,20 @@
+*{margin: 0;padding: 0;}
+body{font:14px "맑은 고딕","Mulgun Gothic",arial, sans-serif;padding: 50px;}
+img{border:0}
+ul,li{list-style: none;}
+a{color:#777; text-decoration: none;}
+
+
+#timing{width: 600px;height: 600px;border:1px solid #000;padding: 10px;}
+#timing div{width: 60px;height: 60px;background:#ccc;transition-duration:2s;margin-bottom: 10px;}
+#timing div p{text-align: center;padding-top:20px ;}
+#timing #ease{border:1px solid #f00;transition-timing-function:ease;}
+#timing #ease-in{border:1px solid #0f0;transition-timing-function:ease-in;}
+#timing #ease-out{border:1px solid #00f;transition-timing-function:ease-out;}
+#timing #ease-in-out{border:1px dotted #000;transition-timing-function:ease-in-out;}
+#timing #linear{border:1px dotted #ffcc00;transition-timing-function:linear;}
+#timing #custom{border:1px dashed #00ffcc;transition-timing-function:cubic-bezier(1,.2,0,.85)}
+#timing #nagative{border:1px dashed #ff00cc;transition-timing-function:cubic-bezier(.67,-0.86,.43,1.68);}
+/* cubic-bezier(위,아래,좌,우) -1~0~1*/
+
+#timing:hover div{border-radius:50%;background:#ffff99;transform:translateX(550px) rotate(720deg);}

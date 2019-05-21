@@ -1,0 +1,21 @@
+*{margin: 0;padding: 0;}
+body{font:14px "맑은 고딕","Mulgun Gothic",arial, sans-serif;padding: 50px;}
+img{border:0}
+ul,li{list-style: none;}
+a{color:#777; text-decoration: none;}
+
+.mission1{margin: 100px;}
+.mission1 img{width: 150px;height: 150px;border-radius:50%; box-shadow:0 0 10px rgba(0,0,0,0.5);opacity:0.5;transition:all 1s ease-out;}
+.mission1 img:hover{width: 200px;height: 200px;opacity:1;}
+
+.mission2{position:fixed;top:40%;left:0;}
+.mission2 ul{}
+.mission2 ul li{margin: 5px 0;}
+.mission2 ul li a{display:block;width:120px;height: 30px;line-height: 30px;color:#fff;border-radius: 0 15px 15px 0 ;padding-left: 20px;box-shadow:1px 1px 1px rgba(0,0,0,0.5);background:#666;transition:all 0.4s ease-in;}
+.mission2 ul li a:hover{width:200px;}
+.mission2 ul li:nth-child(1) a:hover{background:#60D5FC;}
+.mission2 ul li:nth-child(2) a:hover{background:#D560FC;}
+.mission2 ul li:nth-child(3) a:hover{background:#6CC74E;}
+.mission2 ul li:nth-child(4) a:hover{background:#FC8760;}
+.mission2 ul li:nth-child(5) a:hover{background:#FC6082;}
+

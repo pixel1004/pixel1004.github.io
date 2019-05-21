@@ -1,0 +1,58 @@
+*{margin: 0;padding: 0;}
+body{font:16px "맑은 고딕","Mulgun Gothic",arial, sans-serif;}
+img{border:0}
+ul,li{list-style: none;}
+a{color:#777; text-decoration: none;}
+
+@keyframes ball{
+	from{left:0px;top:0;transform: rotate(0deg);}
+	50%{left:300px;top:200px;transform: rotate(360deg);}
+	to{left:700px;top:0px;transform: rotate(720deg);}
+}
+
+
+#container{position:relative;width: 1000px;height: 600px;border:3px soliD #000;}
+#container h1{position:absolute;width: 200px;height: 200px;background: -webkit-linear-gradient(top, #bfd255 0%,#8eb92a 50%,#72aa00 51%,#9ecb2d 100%);border-radius:50%;text-align: center;line-height: 200px;color:#fff;}
+
+#container:hover h1{
+animation-name:"ball";-webkit-animation-name:"ball";
+animation-duration:2s;-webkit-animation-duration:2s;
+animation-direction:alternate;-webkit-animation-direction:alternate;
+animation-iteration-count:infinite;-webkit-animation-iteration-count:infinite;
+animation-timing-function:ease-in;-webkit-animation-timing-function:ease-in;
+animation-delay:0.5s;-webkit-animation-delay:0.5s;
+
+}
+
+/* 
+@keyframes 애니메이션이름{
+from 시작점 동작{}
+to 끝점 동작{}
+} 
+
+1.움직이는 요소에는 position:absolute를 사용하고 
+부모에게는 position:relative를 준다
+2.움직이는 요소의 이름은 영어단어로 시작 ""에 서술 
+3.@keyframes 옆 애니메이션 이름에는 "" 없이 적는다 
+4.동작{css속성:속성,transform 등을 섞어서 서술 가능 }
+5.애니메이션 웹표준이 아니어서 -webkit-이라는 접두어를 붙여준다/
+
+*/
+/* transform(웹요소를변화)
+위치,크기,왜곡,회전
+translate,scale,skew,rotate */
+/* 
+animation-name:애니메이션이름
+animation-duration:애니메이션 재생시간
+animation-direction:normal(한쪽방향),alternate(왕복운동);
+animation-iteration-count:반복횟수(ex:3,infinite:무한반복)
+animation-timing-function:가속도
+animation-delay:대기시간,지연시간
+ */
+
+
+
+/*#container h1{transition-duration:1s;} 
+#container:hover h1{transform:translateX(300px) rotate(360deg);}
+*/
+
