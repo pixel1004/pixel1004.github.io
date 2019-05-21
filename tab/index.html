@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>콘텐츠 영역1-jQuery탭 구현+target링크에 대한 css 레이어 팝업처리</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+    
+        
+    </style>
+    <link rel="stylesheet" href="contents1.css">
+    <script src="./js/jquery-1.12.3.js"></script>
+    <script src="contents1.js"></script>
+</head>
+<body>
+<header class="hd fluid">
+    <h2 class="title">헤더 영역</h2>
+</header>
+<figure class="banner fluid">
+    <h2 class="title">배너 영역</h2>
+</figure>
+<div class="contents fluid">
+    <div class="col400 nBox">
+        <ul class="tabBtnBox">
+            <li class="item1"><button class="tabBtn on">공지사항</button></li>
+            <li class="item2"><button class="tabBtn">갤러리</button></li>
+        </ul>
+        <ul class="tabConBox">
+            <li class="item1 tabItem on">
+                <div class="tabCon">
+                    <ul class="notice">
+                        <li>
+                            <a href="#pop">
+                                <span class="str">[긴급]</span>
+                                <span class="nTit">여기는 글에 대한 제목입니다. 여기는 글에 대한 제목입니다. 여기는 글에 대한 제목입니다. 여기는 글에 대한 제목입니다. 여기는 글에 대한 제목입니다.</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="str">[긴급]</span>
+                                <span class="nTit">여기는 글에 대한 제목입니다. 여기는 글에 대한 제목입니다. 여기는 글에 대한 제목입니다. 여기는 글에 대한 제목입니다. 여기는 글에 대한 제목입니다.</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="str">[일반]</span>
+                                <span class="nTit">여기는 글에 대한 제목입니다. 여기는 글에 대한 제목입니다. 여기는 글에 대한 제목입니다. 여기는 글에 대한 제목입니다. 여기는 글에 대한 제목입니다.</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="str">[일반]</span>
+                                <span class="nTit">여기는 글에 대한 제목입니다. 여기는 글에 대한 제목입니다. 여기는 글에 대한 제목입니다. 여기는 글에 대한 제목입니다. 여기는 글에 대한 제목입니다.</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="item2 tabItem">
+                <div class="tabCon">
+                    <ul class="gal">
+                        <li><img src="http://placehold.it/100x110/c33" alt="갤러리1"></li>
+                        <li><img src="http://placehold.it/100x110/c33" alt="갤러리2"></li>
+                        <li><img src="http://placehold.it/100x110/c33" alt="갤러리3"></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="col400">
+        <h3 class="conTitle">배너</h3>
+        <div class="banBox">
+            <img src="http://placehold.it/300x160/33c" alt="서브배너">
+        </div>
+    </div>
+    <div class="col400">
+        <h3 class="conTitle">바로가기</h3>
+        <ul class="icoBox">
+            <li>
+                <a href="#">
+                    <img src="http://placehold.it/140x60/3c3" alt="바로가기">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="http://placehold.it/140x60/3c3" alt="바로가기">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="http://placehold.it/140x60/3c3" alt="바로가기">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="http://placehold.it/140x60/3c3" alt="바로가기">
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<footer class="ft fluid">
+    <h2 class="title">푸터 영역</h2>
+</footer>
+<div id="pop">
+    <h3 class="popTit">타이틀</h3>
+    <div class="popCon">
+        <p class="popTxt">여기는 팝업 상자에 대한 내용입니다.</p>
+    </div>
+    <a href="#" class="popClose">닫기</a>
+</div>
+</body>
+</html>
