@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>JUST 쇼핑몰</title>
+    <script src="./script/jquery-1.11.1.js"></script>
+    <script src="./script/main.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<div class="header">
+    <a href="#" class="logo">
+        <img src="./images/logo.png" alt="로고">
+    </a>
+    <nav id="gnb">
+        <ul class="menu">
+            <li>
+                <a href="#" class="dep1">탑</a>
+                <ul class="sub">
+                    <li><a href="#">블라우스</a></li>
+                    <li><a href="#">티</a></li>
+                    <li><a href="#">셔츠</a></li>
+                    <li><a href="#">니트</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="dep1">아우터</a>
+                <ul class="sub">
+                    <li><a href="#">자켓</a></li>
+                    <li><a href="#">코트</a></li>
+                    <li><a href="#">가디건</a></li>
+                    <li><a href="#">머플러</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="dep1">팬츠</a>
+                <ul class="sub">
+                    <li><a href="#">청바지</a></li>
+                    <li><a href="#">짧은바지</a></li>
+                    <li><a href="#">긴바지</a></li>
+                    <li><a href="#">레깅스</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="dep1">악세사리</a>
+                <ul class="sub">
+                    <li><a href="#">귀고리</a></li>
+                    <li><a href="#">목걸이</a></li>
+                    <li><a href="#">반지</a></li>
+                    <li><a href="#">팔찌</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</div>
+<div class="slide">
+    <ul class="ban">
+        <li><img src="./images/ban1.jpg" alt="청순해지는 패션 아이템"></li>
+        <li><img src="./images/ban2.jpg" alt="폼나는 아우터 아이템"></li>
+        <li><img src="./images/ban3.jpg" alt="감각이 돋보이도록"></li>
+    </ul>
+</div>
+<div class="contents">
+    <div class="col4">
+        <input type="radio" name="raItem" id="ra1" class="raItem" checked>
+        <input type="radio" name="raItem" id="ra2" class="raItem">
+        <div class="tabBtnBox">
+            <label for="ra1" class="tabBtn item1">공지사항</label>
+            <label for="ra2" class="tabBtn item2">갤러리</label>
+        </div>
+        <ul class="tabConBox">
+            <li class="tabCon item1">
+                <table class="noti">
+                    <thead>
+                        <tr>
+                            <th class="nTit">제목</th>
+                            <th class="nDate">작성일</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="nTit">
+                                <a href="#pop">공지사항1 입니다.</a>
+                            </td>
+                            <td class="nDate">2019-02-11</td>
+                        </tr>
+                        <tr>
+                            <td class="nTit">
+                                <a href="#">공지사항2 입니다.</a>
+                            </td>
+                            <td class="nDate">2019-02-10</td>
+                        </tr>
+                        <tr>
+                            <td class="nTit">
+                                <a href="#">공지사항3 입니다.</a>
+                            </td>
+                            <td class="nDate">2019-02-09</td>
+                        </tr>
+                        <tr>
+                            <td class="nTit">
+                                <a href="#">공지사항4 입니다.</a>
+                            </td>
+                            <td class="nDate">2019-02-08</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li class="tabCon item2">
+                <ul class="gal">
+                    <li class="col4">
+                        <img src="./images/gal1.jpg" alt="갤러리1" class="galImg">
+                    </li>
+                    <li class="col4">
+                        <img src="./images/gal2.jpg" alt="갤러리2" class="galImg">
+                    </li>
+                    <li class="col4">
+                        <img src="./images/gal3.jpg" alt="갤러리3" class="galImg">
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="col4">
+        <h3 class="conTitle">배너</h3>
+        <div class="banImg">
+            <img src="./images/banner.jpg" alt="배너">
+        </div>
+    </div>
+    <div class="col4">
+        <h3 class="conTitle">바로가기</h3>
+        <ul class="shortcut">
+            <li class="col6">
+                <a href="#">
+                    <img src="./images/fashionItem1.png" alt="탑아이콘">
+                    <span class="shortcutTxt">탑</span>
+                </a>
+            </li>
+            <li class="col6">
+                <a href="#">
+                   <img src="./images/fashionItem2.png" alt="아우터아이콘">
+                    <span class="shortcutTxt">아우터</span>
+                </a>
+            </li>
+            <li class="col6">
+                <a href="#">
+                <img src="./images/fashionItem3.png" alt="팬츠아이콘">
+                <span class="shortcutTxt">팬츠</span>
+            </a>
+            </li>
+            <li class="col6">
+                <a href="#">
+                    <img src="./images/fashionItem4.png" alt="액세사리아이콘">
+                    <span class="shortcutTxt">액세사리</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="footer">
+    <div class="ft_logo"></div>
+    <div class="copyright">All Copyrights by KIM @2019</div>
+    <ul class="sns">
+        <li><a href="#"><img src="./images/icon1.png" alt="블로그"></a></li>
+        <li><a href="#"><img src="./images/icon2.png" alt="트위터"></a></li>
+        <li><a href="#"><img src="./images/icon3.png" alt="페이스북"></a></li>
+    </ul>
+</div>
+<div id="pop">
+    <div class="popWrap">
+        <h2 class="popTitle">공지사항1 입니다.</h2>
+        <p class="popContent">공지사항1 입니다. 공지사항1 입니다. 공지사항1 입니다. 공지사항1 입니다. 공지사항1 입니다. 공지사항1 입니다. 공지사항1 입니다. 공지사항1 입니다. 공지사항1 입니다. 공지사항1 입니다.</p>
+        <a href="#" class="popClose">닫기</a>
+    </div>
+</div>
+</body>
+</html>
