@@ -1,0 +1,92 @@
+@charset "utf-8";
+/* 각 영역의 크기 설정 */
+.hd, .slide, .contents, .ft { width: 1200px; margin:0 auto; 
+position:relative;  clear: both; }
+.hd { height:100px;  overflow: visible; }
+.slide { height: 300px; overflow:hidden;}
+.contents { height: 200px; overflow:hidden;}
+.ft { height:100px; overflow:hidden; }
+
+/* 헤더 영역 서식 */
+.logo { display:block; float:left; width:400px; height:100px; 
+background:url("../images/logo.png") no-repeat center center; 
+text-indent: -9999px; }
+#main { position:absolute; right:50px; top:60px; z-index:999;  }
+#main li { float:left; position:relative; }
+#main li a { display:block;   }
+#main li a.dept1 { width:150px; text-align:center; line-height:40px; 
+color:#1d8844; font-size:16px; font-weight:700; border-top:1px solid #3cb149; border-right:1px solid #3cb149; border-bottom:1px solid #3cb149; }
+#main li:first-child a.dept1 { border-left:1px solid #3cb149; }
+#main li:hover a.dept1 { background-color:#3cb149; color:#fff; }
+#main .sub { visibility:hidden;  opacity:0; transition:0.5s; border:0;  height:0; }
+#main:hover .sub { visibility:visible; opacity:1; border:0;  height:auto; }
+#main .sub li { clear:both; width:150px; line-height:40px; }
+#main .sub li a { line-height:40px; color:#fff; font-weight:600;
+font-size:14px; text-align:center; background-color:#3cb149; border:0;
+width:151px; }
+#main .sub li a:hover { color:#1d8844; background:#fff; }
+#main .sub.first:before { content:""; width:545px; height: 121px; position:absolute; top:41px; left:-545px; background-color:#3cb149; z-index:0; }
+#main .sub.first li a { width: 152px; }
+#main .sub.last:before { content:""; width:50px; height: 121px; position:absolute; top:41px; right:-50px; background-color:#3cb149; z-index:0; }
+
+/* 슬라이드 영역 서식 */
+/* 이미지박스 안에 이미지 태그를 이용하는 경우 */
+.banFrame { width:300%; min-width:3600px; }
+.banFrame li { float:left; width: 1200px; height:300px; }
+
+.btnFrame { position:absolute; top:44%; z-index:90; width:100%; }
+.btnFrame li { width: 40px; height:40px; }
+.btnFrame .left { float: left; margin-left: 40px; }
+.btnFrame .right { float: right; margin-right: 40px; }
+/* 버튼에 글자로 하는 경우
+.btnFrame .banBtn { display:block; width: 40px; height:40px; line-height:40px;  text-align:center; font-size:22px; font-weight:600;  
+background:rgba(0,0,0,0.6); border-radius:22px; color:#fff; cursor:pointer;  }
+*/
+/* 버튼에 배경이미지를 이용하는 경우 */
+.btnFrame .banBtn { display:block; width: 40px; height:40px;  text-indent:-9999px;   background-size:40px 40px; cursor:pointer;
+background-repeat:no-repeat; border-radius:22px;   }
+.prevBtn { background-image:url("../images/prevBtn.png"); }
+.nextBtn { background-image:url("../images/nextBtn.png"); }
+
+/* 콘텐츠 영역 서식 */
+.conFrame { width:1200px; height:200px; }
+.conFrame li { float:left; width:400px; height:200px; }
+.conTitle { line-height:38px; color:#1d8844; font-weight:900; 
+text-align:center; }
+.noti { width:380px; height:160px; border:1px solid #333; }
+.noti tr, .noti th, .noti td { height:28px; font-size:14px; color:#333333; }
+.noti th { text-align:center; height:26px; background:#3cb149; 
+color:#fff; }
+.noti thead { width:380px; height:28px; }
+.noti tbody { width:380px; height:124px; }
+.num { width:60px; text-align:center; }
+.title { width:200px;  }
+.date { width:120px; text-align:center; }
+.title a { display:block; overflow:hidden; text-overflow: ellipsis; 
+white-space: nowrap; width: 190px; line-height:30px;  color:#333333;
+font-size:14px; }
+.title a:hover { text-decoration:underline; }
+
+.galFrame { width:388px; margin:0 auto; padding-top:5px; padding-bottom:5px; border:1px solid #333; height: 150px; }
+.galCol { display:block; width:128px; text-align:center; float:left; }
+.galCol img { display:block; width:124px; height:auto; margin:0 auto; }
+
+.bannerBox { width:400px; margin:0 auto; }
+.bannerBox img { display:block; width:380px; height:auto; float:right; }
+
+/* 푸터 영역 서식 */
+.ftLogo { width:200px; height:40px; padding-top:20px; position:absolute;
+left:0; top:0; }
+.copyright { font-size:14px; line-height:100px; text-align:center; color:#333333; }
+.familyBox { width:200px; height:100px; position:absolute; 
+right:0; bottom:0; }
+#family { display:block; line-height:96px; width:200px; margin-top:32px; font-size:16px; border:1px solid #333333; }
+#family option { display:block; line-height: 40px; }
+
+/* 팝업 영역 서식 */
+.popBox { width:30%; height:30%; position:fixed; z-index:9999; 
+left:35%; top:35%; background:#ffffff; border:1px solid #333333; display:none; }
+.popTit { font-size:14px; font-weight:bold; text-indent:10px; color:#fff; background:#333333; line-height: 30px; }
+.popCon { padding:60px; }
+.closeBtn { display:block; float:right; margin-right:60px; 
+width: 80px; line-height:40px; background:#333333; color:#fff; cursor:pointer; }
