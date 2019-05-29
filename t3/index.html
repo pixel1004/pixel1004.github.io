@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>강원천문대</title>
+    <link rel="icon" sizes="16x16" href="./images/favicon.png">
+    <link rel="shortcut icon" href="./images/favicon.ico">
+    <script src="./js/jquery-1.11.1.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
+</head>
+<body>
+<div class="wrap">
+    <header class="hd">
+        <a href="#" class="logo">
+            <img src="./images/logo.gif" alt="로고">
+        </a>
+        <nav class="gnb">
+            <ul class="menu">
+                <li class="item1">
+                    <a href="#" class="dp1">강원천문대</a>
+                    <ul class="sub">
+                        <li><a href="#">천문대소개</a></li>
+                        <li><a href="#">인사말</a></li>
+                        <li><a href="#">오시는길</a></li>
+                    </ul>
+                </li>
+                <li class="item2">
+                    <a href="#" class="dp1">이용안내</a>
+                    <ul class="sub">
+                        <li><a href="#">프로그램</a></li>
+                        <li><a href="#">관람시간표</a></li>
+                        <li><a href="#">이달의 별자리</a></li>
+                    </ul>
+                </li>
+                <li class="item3">
+                    <a href="#" class="dp1">천문대예약</a>
+                    <ul class="sub">
+                        <li><a href="#">예약하기</a></li>
+                        <li><a href="#">예약확인</a></li>
+                        <li><a href="#">예약취소</a></li>
+                    </ul>
+                </li>
+                <li class="item4">
+                    <a href="#" class="dp1">커뮤니티</a>
+                    <ul class="sub">
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">방문후기</a></li>
+                        <li><a href="#">자유게시판</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="slider">
+        <figure id="vs">
+            <ul class="img_box">
+                <li class="item1 on">
+                    <a href="#">
+                        <img src="./images/visual1.jpg" alt="비주얼1">
+                        <h3 class="sl_title">국내 최고의 천문대~!</h3>
+                    </a>
+                </li>
+                <li class="item2">
+                    <a href="#">
+                        <img src="./images/visual2.jpg" alt="비주얼2">
+                        <h3 class="sl_title">국내 유일의 천체 망원경~!</h3>
+                    </a>
+                </li>
+                <li class="item3">
+                    <a href="#">
+                        <img src="./images/visual3.jpg" alt="비주얼3">
+                        <h3 class="sl_title">별자리를 한 눈에~!</h3>
+                    </a>
+                </li>
+            </ul>
+            <ul class="btn_box">
+                <li class="btn_fr"><button class="left_btn">◀</button></li>
+                <li class="btn_fr"><button class="right_btn">▶</button></li>
+            </ul>
+        </figure>
+    </div>
+    <main class="contents">
+        <ul class="con_fr">
+            <li class="nt">
+                <input type="radio" name="rdo" class="rdo" id="ra1" checked>
+                <input type="radio" name="rdo" class="rdo" id="ra2">
+                <div class="tb_btn_box">
+                    <label for="ra1" class="tb_btn" id="tb_btn1">공지사항</label>
+                    <label for="ra2" class="tb_btn" id="tb_btn2">갤러리</label>
+                </div>
+                <div class="tb_con_box" style="position:relative;">
+                    <div class="tb_con" id="tb_con1">
+                        <table class="notice">
+                            <thead>
+                                <tr>
+                                    <th class="item1">번호</th>
+                                    <th class="item2">제목</th>
+                                    <th class="item3">등록일</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="item1">4</td>
+                                    <td class="item2">
+                                       <a class="opener">공공기관 고객만족도 조사 실시 안내</a>
+                                    </td>
+                                    <td class="item3">2019-02-12</td>
+                                </tr>
+                                <tr>
+                                    <td class="item1">3</td>
+                                    <td class="item2">
+                                        <a href="#">2019년 소백산천문대 겨울학교 개최</a>
+                                    </td>
+                                    <td class="item3">2019-02-11</td>
+                                </tr>
+                                <tr>
+                                    <td class="item1">2</td>
+                                    <td class="item2">
+                                        <a href="#">2019 동계 연구원 방문의 날 안내</a>
+                                    </td>
+                                    <td class="item3">2019-02-10</td>
+                                </tr>
+                                <tr>
+                                    <td class="item1">1</td>
+                                    <td class="item2">
+                                        <a href="#">2019학년도 2학기 UST-KASI 천문우주과학 전공 신입생 모집</a>
+                                    </td>
+                                    <td class="item3">2019-02-09</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="tb_con" id="tb_con2">
+                        <div class="gal">
+                            <a href="#" class="item1">
+                                <img src="./images/gal1.jpg" alt="태양계와 새로 발견된 행성계">
+                            </a>
+                            <a href="#" class="item2">
+                                <img src="./images/gal2.jpg" alt="천문대 사진">
+                            </a>
+                            <a href="#" class="item3">
+                                <img src="./images/gal3.jpg" alt="천문보조장비 사진">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="ban">
+                <a href="#">
+                    <img src="./images/banner.jpg" alt="천문 천체 망원경 대형 장비">
+                </a>
+            </li>
+            <li class="short">
+               <a href="#" class="item1">
+                   <img src="./images/short1.png" alt="시설소개">
+                   <span>시설소개</span>
+               </a>
+               <a href="#" class="item2">
+                   <img src="./images/short2.png" alt="묻고답하기">
+                   <span>묻고답하기</span>
+               </a>
+               <a href="#" class="item3">
+                   <img src="./images/short3.png" alt="오시는길">
+                   <span>오시는길</span>
+               </a>
+            </li>
+        </ul>
+    </main>
+    <footer class="ft">
+        <hr class="ft_bor">
+        <div class="ft_logo">
+            <img src="./images/footer_logo.gif" alt="logo" title="footer logo">
+        </div>
+        <div class="ft_wrap">
+            <ul class="ft_link">
+                <li class="item1">
+                    <a href="#" class="ico1">개인정보처리방침</a>
+                </li>
+                <li class="item2">
+                    <a href="#" class="ico2">영상정보처리기기 운영방침</a>
+                </li>
+                <li class="item3">
+                    <a href="#" class="ico3">저작권정책</a>
+                </li>
+                <li class="item4">
+                    <a href="#" class="ico3">고객헌장</a>
+                </li>
+            </ul>
+            <p class="copyright">
+                강원도 양구군 남면 국토정중앙로 127 전화 033-480-2586 <br>
+                COPYRIGHTⓒ 2019 GangWon Observatory ALL RIGHTS RESERVED.
+            </p>
+        </div>       
+        <hr class="ft_bor">
+    </footer>
+</div>
+<div id="tar">
+    <div class="title_bar">
+        <h3 class="pop_title">모집 공고</h3>
+        <div class="close">닫기</div>
+    </div>
+    <div class="pop_con">
+        <h3 class="col_title">2019학년도 2학기 UST-KASI 천문우주과학 전공 신입생 모집</h3>
+        <p class="pop_para">한국천문연구원(KASI) 천문우주과학 전공 (https://major.ust.ac.kr/astros.do 또는 https://kasi.re.kr/kor/introduce/pageView/332)에서는 2019학년도 2학기 석박사 통합과정 및 박사과정 UST 신입생을 모집합니다. 대전 대덕특구에 위치한 한국천문연구원 캠퍼스는 천문학과 우주과학 분야에서 기초과학기술 및 응용과학기술 지식 습득에 탁월한 연구 및 교육 환경(학생인건비: 석사과정 130~185만원/월, 박사과정 170~255만원/월 지급, 기숙사: 대전 외 지역 거주학생에 한하여 KASI 내부 기숙사 입주 가능)을 제공하는 국내 유일의 유관분야 과학기술전문 기관으로서, 세계를 향해 도약하는 핵심 과학기술그룹들을 보유하고 있습니다. </p>
+        <br>
+        <img src="./images/notice1.jpg" alt="천체망원경 촬영화면">
+    </div>
+</div>    
+</body>
+</html>
