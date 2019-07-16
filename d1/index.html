@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>코오롱에 오신 것을 환영합니다.</title>
+	<link rel="stylesheet" href="common.css">
+	<link rel="stylesheet" href="hd.css">
+	<style>
+	#contents { height:100%; clear:both; }
+	.page { height:100%; position:relative; }
+	#visual { height:100%; position:relative; }
+	.imgBox { width:500%; height:100%; }
+	.imgBox li { float:left; width:20%; height:100%; }
+	.imgBox li a { display:block; width:100%; height: 100%;}
+	.imgBox li a img { display:block; width:100%; height:100%; }
+	.btnBox { position:absolute; top:50%; left:0; width:100%; }
+	.btnBox label { display:block; width:76px; height:76px; 
+		background-image:url("./img/ms_btn.png"); text-indent:-9999px; }
+	.btnBox label.prev { background-position:left center; float:left; }
+	.btnBox label.next { background-position:right center; float:right; }
+	#page2 { background-image:url("./img/page1.jpg"); background-position:center center; 
+	background-attachment:fixed; }
+	.pageWrap { height:100%;  position:relative;}
+	.conWrap { position:absolute; width:100%; height:100%; z-index:10; top:0; left:0; }
+	#page2 a { display:block; width:139px; height:39px; text-align:center; }
+	#page2 a.lnk1 { float:left; margin-top:170px; border-radius:23px; border:3px solid #fff; color:#fff; line-height:39px; margin-right:20px; }
+	#page2 a.more { background:#000; color:#fff; position:absolute; bottom:10%; 
+		line-height:39px; } 
+	#page3 { background-image:url("./img/page2.jpg"); background-position:center center; }
+	#page3 a { display:block; width:55px; height:55px; background-image:url("./img/btn_pick_plus.png"); position:absolute; z-index:10; }
+	#page3 a:hover { background-position:left bottom; }
+	#page3 a.item1 { top:100px; left:100px; }
+	#page3 a.item2 { bottom:100px; left:60px;}
+	#page3 a.item3 { bottom:150px; right:100px; }
+	#iconBox li { float:left; width:25%; }
+	.pageTitle { line-height:70px; font-size:18px; color:#333; text-indent:25px;
+		background-repeat:no-repeat; background-position:left center;}
+	#iconBox li.item1 .pageTitle{ background-image:url("./img/bottom_icon_01.png"); }
+	#iconBox li.item2 .pageTitle{ background-image:url("./img/bottom_icon_02.png"); }
+	#iconBox li.item3 .pageTitle{ background-image:url("./img/bottom_icon_03.png"); }
+	#iconBox li.item4 .pageTitle{ background-image:url("./img/bottom_icon_04.png"); }
+	#iconBox li a { display:block; text-align:center; }
+	#iconBox li a img { display:block; width:80%; margin:0 auto; }
+	.pro { font-size:14px; font-weight:900; color:#333; line-height:30px; }
+	.coment { font-size:13px; font-weight:400px; color:#555; line-height:20px; padding:25px; padding-top:30px; }
+	</style>
+	<link rel="stylesheet" href="ft.css">
+</head>
+<body>
+<input type="checkbox" id="ck1" class="ck" />
+<div id="container">
+	<header id="hd">
+		<div class="hd_wrap">
+			<label for="ck1" class="lst">레이블</label>
+			<a href="index.html" class="logo">
+				<img src="./img/logo.png" alt="로고">
+			</a>
+			<nav id="tnb">
+				<ul>
+					<li><a href="sns1.html#page1" class="item1" title="로그인"></a></li>
+					<li><a href="sns1.html#page2" class="item2" title="좋아요"></a></li>
+					<li><a href="sns1.html#page3" class="item3" title="장바구니"></a></li>
+					<li><a href="sns1.html#page4" class="item4" title="찾기"></a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="hd_wrap2">
+			<nav id="gnb">
+				<ul>
+					<li>
+						<a href="sub1.html" class="mnb">SHOP</a>
+						<ul class="sub">
+							<li><a href="sub1.html#page1">COLLECTION</a></li>
+							<li><a href="sub1.html#page2">MAN</a></li>
+							<li><a href="sub1.html#page3">WOMEN</a></li>
+							<li><a href="sub1.html#page4">KIDS</a></li>
+							<li><a href="sub1.html#page5">SHOES</a></li>
+							<li><a href="sub1.html#page6">BAG</a></li>
+							<li><a href="sub1.html#page7">ACC</a></li>
+							<li><a href="sub1.html#page8">CAMPING</a></li>
+							<li><a href="sub1.html#page9">SPECIAL</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="sub2.html" class="mnb">STYLE</a>
+						<ul class="sub">
+							<li><a href="sub2.html">STYLE LOOK</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="sub3.html" class="mnb">EVENT</a>
+						<ul class="sub">
+							<li><a href="sub3.html#page1">K-MAGAZINE</a></li>
+							<li><a href="sub3.html#page2">ABOUT BRAND</a></li>
+							<li><a href="sub3.html#page3">JOURNAL</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<div id="contents">
+		<section class="page" id="page1">
+			<figure id="visual">
+				<ul class="imgBox">
+					<li>
+						<a href="sub1.html#page1">
+							<img src="./img/vs1.jpg" alt="배너1">
+						</a>
+					</li>
+					<li>
+						<a href="sub1.html#page2">
+							<img src="./img/vs2.jpg" alt="배너2">
+						</a>
+					</li>
+					<li>
+						<a href="sub1.html#page3">
+							<img src="./img/vs3.jpg" alt="배너3">
+						</a>
+					</li>
+					<li>
+						<a href="sub1.html#page4">
+							<img src="./img/vs4.jpg" alt="배너4">
+						</a>
+					</li>
+					<li>
+						<a href="sub1.html#page5">
+							<img src="./img/vs5.jpg" alt="배너5">
+						</a>
+					</li>
+				</ul>
+				<div class="btnBox">
+					<label for="" class="prev">좌로</label>
+					<label for="" class="next">우로</label>
+				</div>
+			</figure>
+		</section>
+		<section class="page" id="page2">
+			<img src="./img/pageskin.png" alt="배경">
+			<div class="conWrap">
+				<div class="pageWrap">
+					<a href="" class="lnk1 item1">#코오롱 스포츠</a>
+					<a href="" class="lnk1 item2">#라이트다운</a>
+					<a href="" class="more">MORE</a>
+				</div>
+			</div>
+		</section>
+		<section class="page" id="page3">
+			<img src="./img/pageskin.png" alt="배경">
+			<div class="conWrap">
+				<div class="pageWrap">
+					<a href="" class="lnk2 item1"></a>
+					<a href="" class="lnk2 item2"></a>
+					<a href="" class="lnk2 item3"></a>
+				</div>
+			</div>
+		</section>
+		<section class="hpage" id="iconBox">
+			<ul class="pageWrap">
+				<li class="col item1">
+					<h2 class="pageTitle">페이스북</h2>
+					<a href="http://www.facebook.com/pages/kolonsport/132678626771815">
+						<img src="./img/bottom_col1.jpg" alt="서브배너">
+						<h4 class="pro">페이스북으로 오세요</h4>
+						<p class="coment">겨울 상품 구경하세요<br/>
+						"좋아요" ♥ 할 때 마다 10% 할인 쿠폰 증정</p>
+					</a>
+				</li>
+				<li class="col item2">
+					<h2 class="pageTitle">유튜브</h2>
+					<a href="http://www.youtube.com/kolonsport">
+						<img src="./img/bottom_col2.jpg" alt="서브배너">
+					</a>
+				</li>
+				<li class="col item3">
+					<h2 class="pageTitle">인스타그램</h2>
+					<a href="http://instagram.com/_kolonsport">
+						<img src="./img/bottom_col3.jpg" alt="서브배너">
+					</a>
+				</li>
+				<li class="col item4">
+					<h2 class="pageTitle">블로그</h2>
+					<a href="http://www.kolonsportblog.com/">
+						<img src="./img/bottom_col4.jpg" alt="서브배너">
+						<h4 class="pro">블로그에서 정보를..</h4>
+						<p class="coment">블로그에 들어 오시면 히트상품 정보를
+보실 수 있고, 스포츠 패션 아이템을 조합해보시면 어떨까요</p>
+					</a>
+				</li>
+			</ul>
+		</section>
+		<input type="checkbox" id="ck2" class="ck" checked >
+		<footer id="ft">
+			<div class="ft_wrap">
+				<ul id="fnb">
+					<li><a href="guide.html#page1">매장안내</a></li>
+					<li><a href="guide.html#page2">고객센터</a></li>
+					<li><a href="guide.html#page3">공지사항</a></li>
+					<li><a href="guide.html#page4">이용약관</a></li>
+					<li><a href="guide.html#page5">개인정보처리방침</a></li>
+				</ul>
+				<label for="ck2" class="collapBtn"></label>
+			</div>
+			<div class="ft_wrap2">
+				<div class="left">
+					<p class="copyright">코오롱인더스트리 FnC부문 / 대표이사 : 박동문 / 서울특별시 강남구 삼성로 518<br/>
+	대표메일주소 : kolonsport@kolon.com​ / TEL : 1588-7667 / FAX : 02-3677-7546<br/>
+	통신판매업신고 : 제2012-서울서초-0593호 / 사업자등록번호 : 138-85-19612</p>
+				</div>
+				<div class="middle">
+					<h3 class="ftTitle">1588-7667</h3>
+					<p class="ftComent">AM 09:30 ~ PM 06:00<br/>(토, 일, 공휴일 휴무)</p>
+					<ul class="sns">
+						<li>
+							<a href="http://instagram.com/_kolonsport" class="sns1" title="인스타그램">인스타그램</a>
+						</li>
+						<li>
+							<a href="http://www.facebook.com/pages/kolonsport/132678626771815" class="sns2" title="페이스북">페이스북</a>
+						</li>
+						<li>
+							<a href="https://twitter.com/gokolon" class="sns3" title="트위터">트위터</a>
+						</li>
+						<li>
+							<a href="http://www.kolonsportblog.com/" class="sns4" title="블로그">블로그</a>
+						</li>
+						<li>
+							<a href="http://www.youtube.com/kolonsport" class="sns5" title="유튜브">유뷰브</a>
+						</li>
+					</ul>
+				</div>
+				<div class="right">
+					<select name="" id="" class="rela">
+						<option value="">선택안함</option>
+						<option value="https://www.kolonmall.com">코오롱몰</option>
+						<option value="http://www.elandmall.com">이랜드몰</option>
+						<option value="http://www.kolonfm.com">패션머티리얼</option>
+					</select>
+					<img src="./img/KS_code.png" alt="" class="qr_code">
+				</div>
+			</div>
+		</footer>
+	</div>
+</div>
+<div id="collap">
+	<nav id="collapBox">
+		<label for="ck1" class="close"></label>
+		<ul class="popNav">
+			<li><a href="store.html">매장찾기</a></li>
+			<li><a href="custom.html">고객센터</a></li>
+		</ul>
+	</nav>
+	<nav id="pnb">
+		<ul class="item1">
+			<h3 class="pTitle">COLLECTION</h3>
+			<li><a href="">SEISHIN</a></li>
+			<li><a href="">HERO</a></li>
+		</ul>
+		<ul class="item2">
+			<h3 class="pTitle">MAN</h3>
+			<li><a href="sub1.html#cate2">다운</a></li>
+			<li><a href="sub1.html#cate2">고어자켓</a></li>
+			<li><a href="sub1.html#cate2">자켓</a></li>
+			<li><a href="sub1.html#cate2">베스트</a></li>
+			<li><a href="sub1.html#cate2">티셔츠</a></li>
+			<li><a href="sub1.html#cate2">셔츠</a></li>
+			<li><a href="sub1.html#cate2">팬츠</a></li>
+			<li><a href="sub1.html#cate2">이너웨어</a></li>
+			<li><a href="sub1.html#cate2">모자</a></li>
+			<li><a href="sub1.html#cate2">양말</a></li>
+			<li><a href="sub1.html#cate2">장갑</a></li>
+		</ul>
+		<ul class="item3">
+			<h3 class="pTitle">WOMAN</h3>
+			<li><a href="sub1.html#cate3">다운</a></li>
+			<li><a href="sub1.html#cate3">고어자켓</a></li>
+			<li><a href="sub1.html#cate3">자켓</a></li>
+			<li><a href="sub1.html#cate3">베스트</a></li>
+			<li><a href="sub1.html#cate3">티셔츠</a></li>
+			<li><a href="sub1.html#cate3">셔츠</a></li>
+			<li><a href="sub1.html#cate3">팬츠</a></li>
+			<li><a href="sub1.html#cate3">이너웨어</a></li>
+			<li><a href="sub1.html#cate3">모자</a></li>
+			<li><a href="sub1.html#cate3">양말</a></li>
+			<li><a href="sub1.html#cate3">장갑</a></li>
+		</ul>
+		<ul class="item4">
+			<h3 class="pTitle">KIDS</h3>
+			<li><a href="sub1.html#cate4">자켓</a></li>
+			<li><a href="sub1.html#cate4">티셔츠</a></li>
+			<li><a href="sub1.html#cate4">팬츠</a></li>
+			<li><a href="sub1.html#cate4">슈즈</a></li>
+			<li><a href="sub1.html#cate4">가방</a></li>
+			<li><a href="sub1.html#cate4">기타</a></li>
+		</ul>
+		<ul class="item5">
+			<h3 class="pTitle">SHOES</h3>
+			<li><a href="sub1.html#cate5">트레킹슈즈</a></li>
+			<li><a href="sub1.html#cate5">하이킹슈즈</a></li>
+			<li><a href="sub1.html#cate5">아웃도어워킹슈즈</a></li>
+			<li><a href="sub1.html#cate5">스니커즈</a></li>
+			<li><a href="sub1.html#cate5">키즈슈즈</a></li>
+			<li><a href="sub1.html#cate5">썸머슈즈</a></li>
+			<li><a href="sub1.html#cate5">윈터슈즈</a></li>
+		</ul>
+		<ul class="item6">
+			<h3 class="pTitle">BAG</h3>
+			<li><a href="sub1.html#cate6">소형(30L미만)</a></li>
+			<li><a href="sub1.html#cate6">중대형(30L이상)</a></li>
+			<li><a href="sub1.html#cate6">시티백</a></li>
+			<li><a href="sub1.html#cate6">보조백</a></li>
+			<li><a href="sub1.html#cate6">키즈백</a></li>
+		</ul>
+		<ul class="item7">
+			<h3 class="pTitle">ACC</h3>
+			<li><a href="sub1.html#cate7">모자</a></li>
+			<li><a href="sub1.html#cate7">장갑</a></li>
+			<li><a href="sub1.html#cate7">스틱</a></li>
+			<li><a href="sub1.html#cate7">양말</a></li>
+			<li><a href="sub1.html#cate7">선글라스</a></li>
+			<li><a href="sub1.html#cate7">계절용품</a></li>
+		</ul>
+		<ul class="item8">
+			<h3 class="pTitle">CAMPING</h3>
+			<li><a href="sub1.html#cate8">텐트</a></li>
+			<li><a href="sub1.html#cate8">텐트용품</a></li>
+			<li><a href="sub1.html#cate8">침낭</a></li>
+			<li><a href="sub1.html#cate8">버너/코펠</a></li>
+			<li><a href="sub1.html#cate8">테이블/의자</a></li>
+			<li><a href="sub1.html#cate8">취사도구/식기</a></li>
+			<li><a href="sub1.html#cate8">랜턴</a></li>
+			<li><a href="sub1.html#cate8">기타</a></li>
+		</ul>
+		<ul class="item9">
+			<h3 class="pTitle">SPECIAL</h3>
+			<li><a href="sub1.html#cate9">기획전</a></li>
+			<li><a href="sub1.html#cate9">STYLE LOOK</a></li>
+			<li><a href="sub1.html#cate9">CATALOG</a></li>
+			<li><a href="sub1.html#cate9">STYLE MAGAZINE</a></li>
+			<li><a href="sub1.html#cate9">AD GALLERY & MEDIA</a></li>
+			<li><a href="sub1.html#cate9">EVENT</a></li>
+			<li><a href="sub1.html#cate9">K-MAGAZINE</a></li>
+			<li><a href="sub1.html#cate9">ABOUT BRAND</a></li>
+			<li><a href="sub1.html#cate9">WAY OF KOLON SPORT</a></li>
+			<li><a href="sub1.html#cate9">JOURNAL</a></li>
+		</ul>
+	</nav>
+</div>
+</body>
+</html>
