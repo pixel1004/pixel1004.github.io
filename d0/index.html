@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <!-- 모바일 웹앱 문서정보에 대한 설정 -->
+	<meta name="title" content="마이더스비 의류쇼핑몰">
+	<meta name="auther" content="정혜진">
+	<meta name="url" content="http://아이디.dothome.co.kr">
+	<meta name="description" content="여성 의류 쇼핑몰 사이트 ">
+	<meta name="keywords" content="가을패션,여성의류, 팬츠,의류,가을옷,바지,원피스,">
+	<!-- 애플 어플 문서 정보 설정 -->
+	<meta name="apple-mobile-web-app-title" content="마이더스비 의류쇼핑몰">
+     <meta name="apple-mobile-web-app-capable" content="yes">
+			    <!-- 소셜에 문서정보 노출 설정 -->
+	<meta itemprop="name" content="마이더스비 의류쇼핑몰">
+	<meta itemprop="description" content="여성 의류 쇼핑몰 사이트">
+	<meta itemprop="image" content="./ico/favicon-256.png" >
+			 <!-- 페이스북에 노출 설정 -->
+	<meta property="fb:app_id" content="APP_ID">
+         
+			 <!-- 카카오톡, 블로그 등의 크롤링으로 화면 미리보기 노출 -->
+	<meta property="og:type" content="Website">
+	     		  <meta property="og:title" content="마이더스비 의류쇼핑몰">
+<meta property="og:url" content="http://아이디.dothome.co.kr">
+			  <meta property="og:description" content="여성 의류 쇼핑몰 사이트">
+    <title>마이더스비 쇼핑몰</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- 파비콘 및 메타포 아이콘 적용 -->
+	<!-- 가장 작은 형태의 16x16 크기의 ico -->
+	<link rel=" shortcut icon" href="./ico/favicon.png">
+	<!-- 가장 작은 형태의 16x16 크기의 png -->
+	<link rel=" shortcut icon" href="./ico/favicon.png" type="image/x-icon">
+	<!-- 일반 앱형태의 아이콘 설정 -->
+	<link rel="icon" href="./ico/favicon.png">
+	<link rel="icon" href="ico/favicon-16.png" sizes="16x16"> 
+	<link rel="icon" href="ico/favicon-32.png" sizes="32x32"> 
+	<link rel="icon" href="ico/favicon-48.png" sizes="48x48"> 
+	<link rel="icon" href="ico/favicon-64.png" sizes="64x64"> 
+	<link rel="icon" href="ico/favicon-128.png" sizes="128x128">
+	<!-- 아이폰 고해상도용 파비콘 152x152 -->
+	<link rel="apple-touch-icon-precomposed" href="ico/favicon-152.png">
+    
+    <script src="script/jquery-1.11.1.js"></script>
+    <script src="script/main.js"></script>
+</head>
+<body>
+  <div id="container">
+      <header id="hd">
+         <a href="index.html" class="logo"><img src="images/logo.png" alt="로고"></a>
+         <nav id="gnb">
+             <ul class="menu">
+                 <li>
+                   <a href="#" class="dep1">탑</a>
+                    <ul class="sub">
+                        <li><a href="">블라우스</a></li>
+                        <li><a href="">티</a></li>
+                        <li><a href="">셔츠</a></li>
+                        <li><a href="">니츠</a></li>
+                    </ul> 
+                 </li>
+                 <li>
+                     <a href="#" class="dep1">아우터</a>
+                      <ul class="sub">
+                          <li><a href="">자켓</a></li>
+                          <li><a href="">코트</a></li>
+                          <li><a href="">가디건</a></li>
+                          <li><a href="">패딩</a></li>
+                      </ul> 
+                 </li>
+                 <li>
+                     <a href="#" class="dep1">팬츠</a>
+                      <ul class="sub">
+                          <li><a href="">청바지</a></li>
+                          <li><a href="">짧은바지</a></li>
+                          <li><a href="">레깅스</a></li>
+                          <li><a href="">면바지</a></li>
+                      </ul>  
+                 </li>
+                 <li>
+                     <a href="#" class="dep1">악세사리</a>
+                      <ul class="sub">
+                          <li><a href="">귀고리</a></li>
+                          <li><a href="">목걸이</a></li>
+                          <li><a href="">반지</a></li>
+                          <li><a href="">팔찌</a></li>
+                      </ul> 
+                 </li>
+             </ul>
+         </nav>
+      </header>
+      <div id="slide">
+          <ul class="ban">
+              <li><img src="images/ban1.jpg" alt="가을신상"></li>
+              <li><img src="images/ban2.jpg" alt="앵두OPS"></li>
+              <li><img src="images/ban3.jpg" alt="가디건"></li>
+          </ul>
+      </div>
+      <div id="content">
+          <div class="col4">
+              <input type="radio" name="raItem" id="ra1" class="raItem" checked >
+              <input type="radio" name="raItem" id="ra2" class="raItem">
+              <!--div.tabBtnBox>label.tabBtn.item$*2-->
+              <div class="tabBtnBox">
+                  <label for="ra1" class="tabBtn item1">공지사항</label>
+                  <label for="ra2" class="tabBtn item2">갤러리</label >
+              </div>
+              <!--div.tabConBox>div.tabCon.item$*2
+                  ul.tabConBox>li.tabCon.item$*2
+              -->
+              <ul class="tabConBox">
+                  <li class="tabCon item1">
+                     <!-- table.noti>(thead>tr>th*2)+(tbody>tr*4>td*2)-->
+                      <table class="noti" >
+                          <thead>
+                              <tr>
+                                  <th class="nTit">제목</th>
+                                  <th class="nDate">작성일</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <td class="nTit"><a href="#pop">공지사항1입니다.</a></td>
+                                  <td class="nDate">2019.09.17</td>
+                              </tr>
+                              <tr>
+                                 <td class="nTit"><a href="#pop">공지사항2입니다.</a></td>
+                                  <td class="nDate">2019.09.11</td>
+                              </tr>
+                              <tr>
+                                  <td class="nTit"><a href="#pop">공지사항3입니다.</a></td>
+                                  <td class="nDate">2019.09.10</td>
+                              </tr>
+                              <tr>
+                                 <td class="nTit"><a href="#pop">공지사항4입니다.</a></td>
+                                  <td class="nDate">2019.09.05</td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </li>
+                  <li class="tabCon item2">
+                     <!-- ul.gal>li.col4*3>img.galImg-->
+                     <ul class="gal">
+                         <li class="col4"><img src="images/gal1.jpg" alt="갤러리1" class="galImg"></li>
+                         <li class="col4"><img src="images/gal2.jpg" alt="갤러리2" class="galImg"></li>
+                         <li class="col4"><img src="images/gal3.jpg" alt="갤러리3" class="galImg"></li>
+                     </ul>
+                  </li>
+              </ul>
+          </div><!-- 왼쪽 공지사항,갤러리 -->
+          <div class="col4">
+              <h3 class="conTitle">배너</h3>
+              <div class="banImg"><img src="images/banner.gif" alt=""></div>
+          </div><!--  가운데 배너영역-->
+          <div class="col4">
+              <h3 class="conTitle">바로가기</h3>
+              <!--ul.shockcut>li.col6*4>a>img+span.shockcutTxt-->
+              <ul class="shockcut">
+                  <li class="col6">
+                      <a href="#">
+                          <img src="images/fashionItem1.png" alt="탑아이콘">
+                          <span class="shockcutTxt">탑</span>
+                      </a>
+                  </li>
+                   <li class="col6">
+                      <a href="#">
+                          <img src="images/fashionItem2.png" alt="아우터아이콘">
+                          <span class="shockcutTxt">아우터</span>
+                      </a>
+                  </li>
+                   <li class="col6">
+                      <a href="#">
+                           <img src="images/fashionItem3.png" alt="팬츠아이콘">
+                          <span class="shockcutTxt">팬츠</span>
+                      </a>
+                  </li>
+                   <li class="col6">
+                      <a href="">
+                          <img src="images/fashionItem4.png" alt="액세서리아이콘">
+                          <span class="shockcutTxt">액세서리</span>
+                      </a>
+                  </li>
+              </ul>
+          </div><!-- 오른쪽 바로가리-->
+      </div>
+      <footer id="ft">
+          <div class="ft_logo"></div>
+          <div class="copyright">
+              COPYRIGHT &copy; 2019 MIDAR B. ALL RIGHT RESERVED
+          </div>
+          <ul class="sns">
+              <li><a href="#"><img src="images/icon1.png" alt="블로그"></a></li>
+              <li><a href="#"><img src="images/icon2.png" alt="트위터"></a></li>
+              <li><a href="#"><img src="images/icon3.png" alt="페이스북"></a></li>
+          </ul>
+      </footer>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
