@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>레이아웃 연습</title>
+    <style>
+        *{margin: 0;padding: 0;border: 1px solid #f00;box-sizing: border-box;}
+        body{background: #eaeaea;}
+        ul,ol,dl{list-style: none;}
+        a{text-decoration: none;color: #333;}
+        
+        #wrap{width: 80%;margin: 0 auto;max-width: 1400px;}
+        #hd{height: 150px;}
+        #hd:after{content: "";display: block;clear: both;}
+        
+        .logo{float: left;margin: 30px;padding: 10px 20px;}
+        .nav{float: right;margin-top: 30px;}
+        .nav li{float: left;margin: 0 20px;    }
+          .nav li a{padding: 20px;display: block;}
+        #visual{height: 300px;background: aqua;}
+        #contents{background: #fce795;}
+        #contents > div{width: 33.3333%;float: left;height: 150px;}
+        #contents:after{content: "";display: block;clear: both;}
+        #ft{height: 80px;}
+    </style>
+</head>
+<body>
+    <!--div#wrap>header#hd+div#visual+div#contents+footer#ft-->
+    <div id="wrap">
+        <header id="hd">
+            <h1 class="logo">logo</h1>
+            <ul class="nav">
+                <li><a href="#">메뉴1</a></li>
+                <li><a href="#">메뉴2</a></li>
+                <li><a href="#">메뉴3</a></li>
+            </ul>
+        </header>
+        
+        <div id="visual">
+            메인이미지
+        </div>
+        <section id="contents">
+            <div>컨텐츠1</div>
+            <div>컨텐츠2</div>
+            <div>컨텐츠3</div>
+        </section>
+        <footer id="ft">Copyright </footer>
+    </div>
+</body>
+</html>
