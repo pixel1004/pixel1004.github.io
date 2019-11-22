@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>세계의 미술작품</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./script/jquery-1.11.1.js"></script>
+    <script src="./script/main.js"></script>
+</head>
+<body>
+    <div class="hd_wrap">
+        <div class="hd">
+            <a href="#" class="logo">세계의 미술작품</a>
+            <nav id="main">
+                <ul class="menu">
+                    <li><a href="#" class="dept1">소장처별</a>
+                        <ul class="sub first">
+                            <li><a href="#">한국</a></li>
+                            <li><a href="#">프랑스</a></li>
+                            <li><a href="#">이탈리아</a></li>
+                            <li><a href="#">독일</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="dept1">장르별</a>
+                        <ul class="sub">
+                            <li><a href="#">회화</a></li>
+                            <li><a href="#">판화</a></li>
+                            <li><a href="#">공예/고대유물</a></li>
+                            <li><a href="#">그외</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="dept1">테마별</a>
+                        <ul class="sub">
+                            <li><a href="#">초상화/인물</a></li>
+                            <li><a href="#">종교</a></li>
+                            <li><a href="#">신화/문학</a></li>
+                            <li><a href="#">일상/스포츠</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="dept1">시대별</a>
+                        <ul class="sub last">
+                            <li><a href="#">1900년 이전</a></li>
+                            <li><a href="#">1900년대</a></li>
+                            <li><a href="#">현대</a></li>
+                            <li><a href="#">그외</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="slide">
+        <ul class="ban_fr">
+            <li><a href="#"><img src="./images/banner1.jpg" alt="몽유도원도">
+                <h3 class="sl_tit">조선전기를 지배한 안견의 몽유도원도</h3>
+            </a></li>
+            <li><a href="#"><img src="./images/banner2.jpg" alt="큐비즘 작품">
+                <h3 class="sl_tit">큐비즘의 대가~! 과일로 파리를 정복한 화가의 작품</h3>      
+            </a></li>
+            <li><a href="#"><img src="./images/banner3.jpg" alt="이중섭의 황소그림">
+                <h3 class="sl_tit">한국의 근대미술의 거장~! 황소그림 이중섭</h3>      
+            </a></li>
+        </ul>
+        <ul class="btn_fr">
+            <li class="up">
+                <button class="ban_btn prev_btn">▲</button>
+            </li>
+            <li class="down">
+                <button class="ban_btn next_btn">▼</button>
+            </li>
+        </ul>
+        <ul class="num_fr">
+        	<li class="item1 on"><button class="num_btn"></button></li>
+        	<li class="item2"><button class="num_btn"></button></li>
+        	<li class="item3"><button class="num_btn"></button></li>
+        </ul>
+    </div>
+    <div class="contents">
+        <ul class="con_fr">
+            <li class="notice">
+                <h3 class="con_title">공지사항</h3>
+                <div class="divider"></div>
+                <table class="noti">
+                    <thead>
+                        <tr>
+                            <th class="title">제목</th>
+                            <th class="date">작성일</th>
+                        </tr>   
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="title">
+                                <a class="pop_open_btn">공공대출권 도입촉구를 위한 10만 예술창작인 서명운동</a>
+                            </td>
+                            <td class="date">2019-03-20</td>
+                        </tr>
+                        <tr>
+                            <td class="title">
+                                <a href="#">수원지부장 이,취임식 안내</a>
+                            </td>
+                            <td class="date">2019-03-19</td>
+                        </tr>
+                        <tr>
+                            <td class="title">
+                                <a href="#">[2019 대한민국 미술축전 KAFA 국제아트페어]</a>
+                            </td>
+                            <td class="date">2019-03-17</td>
+                        </tr>
+                        <tr>
+                            <td class="title">
+                                <a href="#">예술인의 지위 및 권리 보장에 관한 법률(안)</a>
+                            </td>
+                            <td class="date">2019-03-14</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li class="gal">
+                <h3 class="con_title">갤러리</h3>
+                <div class="divider"></div>
+                <div class="gal_fr">
+                    <a href="#" class="gal_co">
+                        <img src="./images/gal1.jpg" alt="갤러리1">
+                    </a>
+                    <a href="#" class="gal_co">
+                        <img src="./images/gal2.jpg" alt="갤러리2">
+                    </a>
+                    <a href="#" class="gal_co">
+                        <img src="./images/gal3.jpg" alt="갤러리3">
+                    </a>
+                </div>
+            </li>
+            <li class="short">
+                <h3 class="con_title">배너</h3>
+                <div class="divider"></div>
+                <div class="banner_box">
+                    <a href="#" class="item1">
+                        <img src="./images/banner.jpg" alt="한중미술작가협회 작가 초대전">
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="ft_wrap">
+        <div class="ft">
+        	<div class="ft_logo"></div>
+            <p class="copyright">서울특별시 양천구 목동서로 225 대한민국예술인센터 810호 전화 02)743-8051~4 <br>
+			Copyright ⓒ 2006 사단법인 한국미술작품협회 All Rights Reserved.</p>
+            <div class="right_box">
+                <ul class="sns_box">
+                    <li class="item1"><a href="#" class="ico1"></a></li>
+                    <li class="item2"><a href="#" class="ico2"></a></li>
+                    <li class="item3"><a href="#" class="ico3"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div> 
+    <div class="pop_box">
+        <h2 class="pop_tit">공공대출권 도입촉구를 위한 10만 예술창작인 서명운동</h2>
+        <p class="pop_con">공공도서관에서 무료 대출로 인하여 경제적 손실을 입는 예술창작인의 권리를 보호하기 위하여 공공대출권 도입을 위한 입법 요구 서명운동에 미술인들의 적극적인 동참을 바랍니다.</p>
+        <p class="pop_con">★ 공공대출권은 OECD에 가입되어 있는 주요 34개국의 선진국에서 도입하고 있고, EU에서도 공공
+대출권 보호를 의무화하고 있는 문화체육관광부의 권고안이기도 합니다.</p>
+        <p class="pop_con">★ 공공대출권 서명운동은 향후 미술인 직업보장, 미술품조세물납 등의 입법에도 중요한 토대가 될
+것입니다. 적극 동참하시어 미술인의 권리보호와, 권익과 복리 향상에 앞장서시기 바랍니다.</p>
+        <p class="pop_con">★ 주최: 한국복제전송저작권협회, 한국미술협회, 한국문예학술저작권협회, 국제펜클럽한국본부, 한국
+방송작가협회, 한국학술단체총연합회, 한국시나리오작가협회, 한국사진작가협회, 한국언론진흥재단</p>
+        <img src="./images/notice_pop.jpg" alt="팝업이미지" class="pop_img">
+        <button class="close_btn">닫기</button>
+    </div>
+</body>
+</html>

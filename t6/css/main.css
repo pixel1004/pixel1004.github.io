@@ -1,0 +1,109 @@
+@charset "utf-8";
+/* 각 영역의 크기 설정 */
+body, html { width:100%; color:#333333; }
+.hd_wrap, .ft_wrap {  width:100%; height: 100px; background:#efefef;}
+.hd, .slide, .contents, .ft { width: 1200px; margin:0 auto; 
+position:relative;  clear: both; }
+.hd { height:100px;  overflow: visible; }
+.slide { height: 300px; overflow:hidden;}
+.contents { height: 200px; overflow:hidden;}
+.ft { height:100px; overflow:hidden; }
+
+/* 헤더 영역 서식 */
+.logo { display:block; float:left; width:200px; height:100px; 
+background:url("../images/logo.png") no-repeat center center; 
+text-indent: -9999px; }
+#main { position:absolute; right:50px; top:30px; z-index:999;  }
+#main li { float:left; position:relative; }
+#main li a { display:block;   }
+#main li a.dept1 { width:150px; text-align:center; line-height:40px; 
+color:#737373; font-size:16px; font-weight:700; border-top:1px solid #00c73c; border-right:1px solid #00c73c; border-bottom:1px solid #00c73c; }
+#main li:first-child a.dept1 { border-left:1px solid #00c73c; }
+#main li:hover a.dept1 { background-color:#00c73c; color:#fff; }
+#main .sub { visibility:hidden;  opacity:0; transition:0.5s; border:0;  height:160px; 
+background:#00c73c;}
+#main:hover .sub { visibility:visible; opacity:1; border:0;  height:160px; }
+#main .sub li { clear:both; width:150px; line-height:40px; }
+#main .sub li a { line-height:40px; color:#fff; font-weight:600;
+font-size:14px; text-align:center; background-color:#00c73c; border:0;
+width:151px; }
+#main .sub li a:hover { color:#737373; background:#fff; }
+#main .sub.first:before { content:""; width:545px; height:160px; position:absolute; top:41px; left:-545px; background-color:#00c73c; z-index:0; }
+#main .sub.first li a { width: 152px; }
+#main .sub.last:before { content:""; width:50px; height:160px; position:absolute; top:41px; right:-50px; background-color:#00c73c; z-index:0; }
+
+/* 슬라이드 영역 서식 */
+/* 이미지박스 안에 이미지 태그를 이용하는 경우 */
+.ban_fr { width:300%; min-width:3600px; }
+.ban_fr li { width: 1200px; height:300px; position:relative; }
+.ban_fr li a { display:block; position:relative; }
+.ban_fr .sl_tit { width: 100%; position:absolute; left:0; bottom:10%; line-height:2; text-align:center; 
+color:#ffffff; text-shadow:2px 2px 5px #333333; font-size:24px; }
+.btn_fr { position:absolute; top:35%; z-index:90; width:100%; }
+.btn_fr li { width: 40px; height:40px; float:right; clear:both; margin-top:20px; }
+.btn_fr .up { margin-right: 40px; }
+.btn_fr .down { margin-right: 40px; }
+
+.btn_fr .ban_btn { display:block; width: 40px; height:40px; line-height:40px;  text-align:center; font-size:22px; font-weight:600;  
+background:rgba(0,0,0,0.6); border-radius:22px; color:#fff; cursor:pointer;  }
+
+
+/* 콘텐츠 영역 서식 */
+.con_fr { width:1200px; height:200px; }
+.con_fr li { float:left; width:400px; height:200px; }
+.con_title { line-height:38px; color:#ffffff; font-weight:900; 
+text-align:center; clear:both; background:#00c73c; margin-top:2px; 
+width:120px; font-size:14px; border-radius:5px 5px 0px 0px; }
+.divider { clear:both; width:95%; height:2px;  background:#00c73c; }
+.noti { width:380px; height:150px; border:1px solid #00c73c; font-size:13px; padding-top:3px; 
+}
+.noti tr, .noti th, .noti td { height:27px; font-size:13px; color:#333333; }
+.noti th { text-align:center; height:25px; background:#00c73c; 
+color:#fff; }
+.noti thead { width:380px; height:26px; }
+.noti tbody { width:380px; height:120px; }
+.num { width:60px; text-align:center; background-image:url("../images/list.gif");
+background-repeat:no-repeat; background-position:center center; 
+background-size:auto 80%; border-right:0; }
+.title { width:200px;  }
+.date { width:120px; text-align:center; }
+.title a { display:block; overflow:hidden; text-overflow: ellipsis; 
+white-space: nowrap; width: 190px; line-height:28px;  color:#333333;
+font-size:13px; cursor:pointer; }
+.title a:hover { text-decoration:underline; }
+
+.gal .divider { width:378px; }
+.gal_fr { width:376px; margin-left:0px; margin-top:0px; padding-top:2px; padding-bottom:5px; border:1px solid #00c73c; height:146px; }
+.gal_co { display:block; width:124px; text-align:center; float:left; }
+.gal_co img { display:block; width:120px; height:auto; margin:0 auto; }
+
+.icon_box { width:400px; height:160px; margin:0 auto; overflow:hidden; }
+.icon_box a { display:block; float:left; width:200px; text-align:center; margin-top:5px;  line-height: 1.4; }
+.icon_box img { display:block; width:50px; height:auto;  margin:0 auto; }
+.icon_box .txt { font-size:14px; font-weight:bold; color:#737373; text-align:center; width:60px; }
+.icon_box a:hover .txt { color:#00c73c; }
+
+/* 푸터 영역 서식 */
+.ft { position:relative;  }
+.copyright { font-size:13px; line-height:1.6; text-align:center; color:#333333; padding-top:25px; }
+.right_box { position:absolute; right:0px; bottom:0; width:200px; height:100px; }
+.sns_box { width:200px;  }
+.sns_box li { float:right; width:60px; height:40px; margin-left:5px; margin-top:6px; }
+.sns_box li a { display:block; width:32px; height:32px; background-repeat:no-repeat;
+background-position:center center;  background-size:cover; margin:0 auto;}
+.sns_box li a.ico1 { background-image:url(../images/sns1.png); }
+.sns_box li a.ico2 { background-image:url(../images/sns2.png); }
+.sns_box li a.ico3 { background-image:url(../images/sns3.png); }
+.family_box { clear:both; width:200px; height:40px; padding-top:10px; }
+#family { display:block; line-height:96px; width:200px; font-size:13px; border:1px solid #333333; }
+#family option { display:block; line-height: 40px; }
+.hr { width:100%; height:2px; background:#333; clear:both; margin-top: 10px; }
+
+/* 팝업 영역 서식 */
+.pop_box { width:30%; height:50%; position:fixed; z-index:9999; 
+left:35%; top:20%; background:#ffffff; border:1px solid #333333; display:none; }
+.pop_tit { font-size:14px; font-weight:bold; text-indent:10px; color:#fff; background:#333333; line-height:30px; }
+.pop_con { padding:10px 40px; }
+.pop_img { clear:both; margin-left:40px;  display:block; }
+.close_btn { display:block; position:absolute; right:60px; bottom:30px;
+width:80px; line-height:40px; background:#333333; color:#fff; cursor:pointer; }

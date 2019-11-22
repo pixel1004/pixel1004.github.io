@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>대한은행</title>
+    <script src="./js/jquery-1.11.1.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js"></script>
+</head>
+<body>
+<div class="wrap">
+    <div class="fix_wrap hd_wrap">
+        <header class="hd">
+            <a href="#" class="logo">
+                <img src="./images/logo.png" alt="로고">
+            </a>
+            <nav class="gnb">
+                <ul class="menu">
+                    <li class="item1">
+                        <a href="#" class="dp1">개인</a>
+                        <ul class="sub">
+                            <li><a href="#">조회</a></li>
+                            <li><a href="#">이체</a></li>
+                            <li><a href="#">공과금</a></li>
+                            <li><a href="#">예금/신탁</a></li>
+                        </ul>
+                    </li>
+                    <li class="item2">
+                        <a href="#" class="dp1">기업</a>
+                        <ul class="sub">
+                            <li><a href="#">조회</a></li>
+                            <li><a href="#">이체</a></li>
+                            <li><a href="#">전자결재</a></li>
+                            <li><a href="#">수표/어음</a></li>
+                        </ul>
+                    </li>
+                    <li class="item3">
+                        <a href="#" class="dp1">금융상품</a>
+                        <ul class="sub">
+                            <li><a href="#">저축상품</a></li>
+                            <li><a href="#">대출상품</a></li>
+                            <li><a href="#">투자상품</a></li>
+                            <li><a href="#" class="blank">&nbsp;</a></li>
+                        </ul>
+                    </li>
+                    <li class="item4">
+                        <a href="#" class="dp1">카드</a>
+                        <ul class="sub">
+                            <li><a href="#">카드 정보</a></li>
+                            <li><a href="#">카드 신청</a></li>
+                            <li><a href="#">이용내역조회</a></li>
+                            <li><a href="#" class="blank">&nbsp;</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>    
+    <div class="slider">
+        <figure id="vs">
+            <ul class="img_box">
+                <li class="item1">
+                    <a href="#">
+                        <img src="./images/ban1.jpg" alt="편리한 은행 업무 서비스를 제공하는 대한은행">
+                        <h3 class="ban_tit">편리한 은행 업무 서비스를 제공하는 대한은행</h3>
+                    </a>
+                </li>
+                <li class="item2">
+                    <a href="#">
+                        <img src="./images/ban2.jpg" alt="인터넷 뱅킹을 선도하는 보안 최강의 대한은행">
+                        <h3 class="ban_tit">인터넷 뱅킹을 선도하는 보안 최강의 대한은행</h3>
+                    </a>
+                </li>
+                <li class="item3">
+                    <a href="#">
+                        <img src="./images/ban3.jpg" alt="인터넷 뱅킹을 선도하는 보안 최강의 대한은행">
+                        <h3 class="ban_tit">인터넷 뱅킹을 선도하는 보안 최강의 대한은행</h3>
+                    </a>
+                </li>
+            </ul>
+            <ul class="btn_box">
+                <li class="btn_fr"><button class="left_btn">◀</button></li>
+                <li class="btn_fr"><button class="right_btn">▶</button></li>
+            </ul>
+        </figure>
+    </div>
+    <main class="contents">
+        <ul class="con_fr">
+            <li class="nt">
+                <div class="tb_btn_box">
+                    <button class="tb_btn on">공지사항</button>
+                    <button class="tb_btn">갤러리</button>
+                </div>
+                <div class="tb_con_box">
+                    <div class="tb_con on" id="tb_con1">
+                        <table class="notice">
+                            <thead>
+                                <tr>
+                                    <th class="item1">제목</th>
+                                    <th class="item2">등록일</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="item1">
+                                       <a class="opener">중요  정기예금 금리인상 안내(2019.3.15.시행)</a>
+                                    </td>
+                                    <td class="item2">2019.03.13</td>
+                                </tr>
+                                <tr>
+                                    <td class="item1">
+                                        <a href="#">중요  2019년 3월 햇살론/모기지론 금리 공시</a>
+                                    </td>
+                                    <td class="item2">2019.02.28</td>
+                                </tr>
+                                <tr>
+                                    <td class="item1">
+                                        <a href="#">NPL 채권 공개매각 설명회 공지</a>
+                                    </td>
+                                    <td class="item2">2019.03.08</td>
+                                </tr>
+                                <tr>
+                                    <td class="item1">
+                                        <a href="#">설 연휴 중 업무안내</a>
+                                    </td>
+                                    <td class="item2">2019.01.28</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="tb_con" id="tb_con2">
+                        <div class="gal">
+                            <a href="#" class="item1">
+                                <img src="./images/gal1.jpg" alt="갤러리1">
+                            </a>
+                            <a href="#" class="item2">
+                                <img src="./images/gal2.jpg" alt="갤러리2">
+                            </a>
+                            <a href="#" class="item3">
+                                <img src="./images/gal3.jpg" alt="갤러리3">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="ban">
+                <h3 class="con_title">배너</h3>
+                <div class="list_div"></div>
+                <a href="#">
+                    <img src="./images/banner1.jpg" alt="대출한도 조회">
+                </a>
+                <a href="#">
+                    <img src="./images/banner2.jpg" alt="신용대출">
+                </a>
+            </li>
+            <li class="short">
+                <h3 class="con_title">바로가기</h3>
+                <div class="list_div"></div>
+               <a href="#" class="item1">
+                   <img src="./images/item1.png" alt="간편 대출신청">
+                   <span>간편 대출신청</span>
+               </a>
+               <a href="#" class="item2">
+                   <img src="./images/item2.png" alt="투자 하기">
+                   <span>투자 하기</span>
+               </a>
+               <a href="#" class="item3">
+                   <img src="./images/item3.png" alt="예금 가입 하기">
+                   <span>예금 가입 하기</span>
+               </a>
+            </li>
+        </ul>
+    </main>
+    <div class="fix_wrap ft_wrap">    
+        <footer class="ft">
+            <div class="ft_logo">
+                <img src="./images/footer_logo.png" alt="logo" title="footer logo">
+            </div>
+            <div class="ft_right">
+                <ul class="ft_link">
+                    <li class="item1"><a href="">은행비리신고센터</a></li>
+                    <li class="item2"><a href="">개인정보취급방침</a></li>
+                    <li class="item3"><a href="">보호금융상품</a></li>
+                    <li class="item4"><a href="">개인정보이용제공조회</a></li>
+                    <li class="item5"><a href="">금융사기주의안내</a></li>
+                </ul>
+                <p class="copyright">
+                    서울특별시 중구 세종대로 39 10층 (남대문로 4가 서울상공회의소) 전화  02-3978-6000 <br>
+                    COPYRIGHTⓒ 2019 Daehan Bank ALL RIGHTS RESERVED.
+                </p>
+            </div>    
+        </footer>
+    </div>
+</div>
+<div id="tar">
+    <div class="title_bar">
+        <h3 class="pop_title">정기예금 금리인상 안내</h3>
+        <div class="close">닫기</div>
+    </div>
+    <div class="pop_con">
+        <h3 class="col_title">정기예금 금리인상 안내(2019.3.15.시행)</h3>
+        <p class="pop_para">대한은행과 함께해주시는 고객님께 감사드립니다.
+2019년3월15일(금) 부터 시행되는 정기예금 금리 인상 안내 말씀 드립니다.</p>
+        <br>
+        <p class="pop_para">■ 근로자정기예금, 근로자 e-정기예금(세전, 연금리)</p>
+        <p class="pop_para">     - 1개월 이상 1.0% <br>
+     - 3개월 이상 1.2% <br>
+     - 6개월 이상 1.5% <br>
+     - 1년~3년     2.2% → 2.3% (▲0.1%p)</p>
+        <p class="pop_para">■ 부자되기 안심정기예금, 부자되기 e-안심정기예금 (세전, 연금리)</p>
+        <p class="pop_para">     - 3년  2.3% → 2.4% (▲0.1%p)</p>
+        <p class="pop_para">&nbsp;</p>
+        <p class="pop_para">&nbsp;</p>
+        <p class="pop_para">&nbsp;</p>
+        <p class="pop_para">&nbsp;</p>
+    </div>
+</div>    
+</body>
+</html>
