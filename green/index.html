@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>스마트기기 포트폴리오발표</title>
+    <script src="prefixfree.min.js"></script>
+    <style>
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+body {
+     margin: 2%; 
+  background: #F5F5F5;
+  margin: 0;
+  padding: 10px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+    padding:2% 3%;
+}
+        .logo{float: left;width: 30%;}
+        .logo2{float: right;}
+        .logo img{display: block;width: 80%;}      
+        .logo2 img{display: block;width: 100px;}      
+        .blank{clear: both;width: 100%;}
+        
+h1{ font-size: 32px;color: #333;}  
+        
+        
+div.flip-3d {  perspective:1200px;  width:28%;height: 300px;
+    display:inline-block;    margin:1%;    cursor:pointer; }
+.col {
+  display: inline-block;
+  padding: 10px;
+    
+}
+
+.card {
+  width: 300px;
+  height: 100%;
+  margin: auto;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  font-size:18px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.card:hover {
+  z-index: 50;
+}
+
+.card .f-card {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  box-shadow: 0 0 0 #eee;
+  left: 0;
+  top: 0;
+  color: #555;
+  /*background: #fff;*/
+  z-index: 5;
+  transition: ease-in 0.3s;
+}
+.card .b-card {
+  width: 100%  ;
+  height: 100%  ;
+/*  background: #eee;*/
+  color: #f53249;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 10px #ccc inset;
+}
+
+#model-16 .card {
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  transition: 1s ease-in;
+}
+        
+#model-16 .card .f-card img{display: block;width: 100%;height: 100%;}
+/*#model-16 .card .f-card {
+  -webkit-backface-visibility: visible;
+          backface-visibility: visible;
+  z-index: auto;
+}
+   */     
+#model-16 .card .b-card {
+   position:absolute;
+    width:100%;    height:100%;
+    top:0;left: 0;   transform: rotateY(0.5turn) translateZ(1px);
+    background:rgba(255, 255, 255, 0.9);
+    text-align:center;
+    transition:1s 1s opacity;
+   
+}
+#model-16 .card .b-card  img{ display: block;width: 100%;height: 100%;opacity: 0;}       
+#model-16 .card:hover {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+#model-16 .card:hover .f-card {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+    opacity: 0;
+}
+#model-16 .card:hover .b-card {
+  opacity: 1;
+  
+}
+#model-16 .card:hover .b-card  img{ opacity: 1;}
+
+    </style>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script>
+
+</script>
+</head>
+<body>
+<div class="logo"><img src="images/logo.svg" alt=""></div>
+<div class="logo2"><img src="images/logo11.svg" alt=""></div>
+<div class="blank"></div>
+<h1>스마트기기서비스를 위한 디지털 UX/UI디자인(반응형웹구현)전문가<br>포트폴리오 발표</h1>
+<div class="col flip-3d " id="model-16">
+  <div class="card">
+   <a href="http://kyy9510.github.io/p1/" target="new">
+    <div class="f-card"><img src="./images/project8.jpg" alt=""></div>
+    <div class="b-card"><img src="./images/kang.jpg" alt=""></div>
+    </a>  
+  </div>
+  <div><h3>강예은</h3></div>
+</div>
+
+<div class="col flip-3d " id="model-16">
+ <a href="https://okehdja.github.io/portfolio/" target="new">
+  <div class="card">
+    <div class="f-card"><img src="./images/2.png" alt=""></div>
+    <div class="b-card"><img src="./images/kwuk.png" alt=""></div>  
+  </div>
+  </a>  
+  <div><h3>곽동진</h3></div>
+</div>
+
+<div class="col flip-3d " id="model-16">
+ <a href="https://songinhye.github.io/songinhye/" target="new">
+  <div class="card">
+    <div class="f-card"><img src="./images/tedmain.png" alt=""></div>
+    <div class="b-card"><img src="./images/s2ne.jpg" alt=""></div>  
+  </div>
+   </a>  
+  <div><h3>송인혜</h3></div>
+</div>
+
+<div class="col flip-3d " id="model-16">
+ <a href="http://199eunhee.github.io/p1" target="new">
+  <div class="card">
+    <div class="f-card"><img src="./images/3.jpg" alt=""></div>
+    <div class="b-card"><img src="./images/yu.png" alt=""></div>  
+  </div>
+   </a> 
+  <div><h3>유은희</h3></div>
+</div>
+
+<div class="col flip-3d " id="model-16">
+ <a href="https://ghjumi2222.github.io/portfolio/" target="new">
+  <div class="card">
+    <div class="f-card"><img src="./images/5.png" alt=""></div>
+    <div class="b-card"><img src="./images/jumi.png" alt=""></div>  
+  </div>
+   </a>  
+  <div><h3>이주미</h3></div>
+</div>
+
+
+
+
+</body>
+</html>
